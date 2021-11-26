@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFC3E6"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/imprima"
+        android:text="EzyFoods"
+        android:textColor="#376996"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/DrinksLayout"
+        android:layout_width="129dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/drinksImage"
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/drinks_icon" />
+
+        <Button
+            android:id="@+id/Drinksbtn"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Drinks"
+            android:textAlignment="center"
+            android:textColor="#376996"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SnacksLayout"
+        android:layout_width="129dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <ImageView
+            android:id="@+id/SnacksImage"
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/snacks_icon" />
+
+        <Button
+            android:id="@+id/Snacksbtn"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Snacks"
+            android:textAlignment="center"
+            android:textColor="#376996"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FoodsLayout"
+        android:layout_width="129dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="152dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinksLayout">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/foods_icon" />
+
+        <Button
+            android:id="@+id/Foodbtn"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Foods"
+            android:textAlignment="center"
+            android:textColor="#376996"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TopUpLayout"
+        android:layout_width="129dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="152dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SnacksLayout">
+
+        <ImageView
+            android:id="@+id/topupImage"
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/topup_icon" />
+
+        <Button
+            android:id="@+id/TopUpbtn"
+            android:layout_width="103dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="Top Up"
+            android:textAlignment="center"
+            android:textColor="#376996"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="My Order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
