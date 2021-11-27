@@ -1,4 +1,4 @@
-package com.example.kotakfood;
+package com.example.kotakfood.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.kotakfood.views.Drink_AirMineral_Activity;
+import com.example.kotakfood.R;
 
 public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder>{
 
@@ -67,7 +69,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder
                     Intent intent =  new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent =  new Intent(context,Drink_AirMineral_Activity.class);
+                            intent =  new Intent(context, Drink_AirMineral_Activity.class);
                             break;
 
                         case 1 :

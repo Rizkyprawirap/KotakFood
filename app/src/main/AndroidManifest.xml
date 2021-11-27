@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotakFood">
         <activity
-            android:name=".Drink_AirMineral_Activity"
+            android:name=".views.Drink_AirMineral_Activity"
             android:exported="false" />
         <activity
-            android:name=".Drink_Order_Activity"
+            android:name=".views.Drink_Order_Activity"
             android:exported="false" />
         <activity
-            android:name=".Drinks_Activity"
+            android:name=".views.Drinks_Activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFC3E6"
-    tools:context=".Drink_AirMineral_Activity">
+    tools:context=".views.Drink_AirMineral_Activity">
 
     <ImageView
         android:id="@+id/imageView"

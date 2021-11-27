@@ -8,7 +8,7 @@
     android:background="#EFC3E6"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -49,6 +49,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
             android:gravity="center"
             android:text="Drinks"
             android:textAlignment="center"
@@ -82,6 +83,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
             android:gravity="center"
             android:text="Snacks"
             android:textAlignment="center"
@@ -117,6 +119,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
             android:gravity="center"
             android:text="Foods"
             android:textAlignment="center"
@@ -152,6 +155,7 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/open_sans_semibold"
             android:gravity="center"
             android:text="Top Up"
             android:textAlignment="center"
@@ -165,6 +169,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:fontFamily="@font/open_sans_semibold"
         android:text="My Order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

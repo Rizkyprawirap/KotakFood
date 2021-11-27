@@ -4,12 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/drawable/drinks_icon.xml" value="0.27395833333333336" />
-        <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_drink_air_mineral.xml" value="0.536" />
+        <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_drink_air_mineral.xml" value="0.6" />
         <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_drink_order.xml" value="0.2" />
         <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_drinks.xml" value="0.16" />
-        <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_main.xml" value="0.6" />
         <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/activity_order.xml" value="0.12689969604863222" />
         <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/drink_row.xml" value="0.536" />
+        <entry key="..\:/Users/Asus/Android Studio/KotakFood/app/src/main/res/layout/drinks_order_page.xml" value="0.2578125" />
       </map>
     </option>
   </component>

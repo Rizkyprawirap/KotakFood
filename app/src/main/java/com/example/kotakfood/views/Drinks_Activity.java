@@ -1,18 +1,18 @@
-package com.example.kotakfood;
+package com.example.kotakfood.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import com.example.kotakfood.adapter.DrinkAdapter;
+import com.example.kotakfood.R;
 
 public class Drinks_Activity extends AppCompatActivity {
 
-    String drinkName[],drinkPrice[];
-    int image[] = {
+    String[] drinkName,drinkPrice;
+    int[] image = {
       R.drawable.airmineral, R.drawable.jusapel,
       R.drawable.jusmangga, R.drawable.jusalpukat
     };
