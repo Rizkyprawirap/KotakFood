@@ -1,7 +1,9 @@
 package com.example.kotakfood.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,17 +60,17 @@ public class Drink_AirMineral_Activity extends AppCompatActivity {
         int price=calculateprice();//memanggil method jumlah harga
         String pricemessage=createOrderSummary(price);
 
-        displayMessage(pricemessage);
+//        displayMessage(pricemessage);
 
-//        Button orderMore = (Button)findViewById(R.id.orderMorebtn);
-//
-//        orderMore.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(Drink_AirMineral_Activity.this,Drinks_Activity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button orderMore = (Button)findViewById(R.id.orderMorebtn);
+
+        orderMore.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Drink_AirMineral_Activity.this,Drinks_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
