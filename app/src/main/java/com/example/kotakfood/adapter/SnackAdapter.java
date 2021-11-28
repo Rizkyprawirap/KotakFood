@@ -2,7 +2,6 @@ package com.example.kotakfood.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,53 +12,47 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.kotakfood.model.drinkBase;
-import com.example.kotakfood.model.drinkType;
-import com.example.kotakfood.views.Drink_AirMineral_Activity;
 import com.example.kotakfood.R;
+import com.example.kotakfood.model.snackBase;
+import com.example.kotakfood.views.Drink_AirMineral_Activity;
+import com.example.kotakfood.views.Snack_Activity;
+import com.example.kotakfood.views.Snack_Lays_Activity;
 
-import java.util.ArrayList;
+public class SnackAdapter extends RecyclerView.Adapter<SnackAdapter.MyViewHolder>{
 
-public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder>{
-
-    drinkBase dt;
+    snackBase sb;
     Context context;
     ConstraintLayout ItemList;
 
-    public DrinkAdapter(Context context, drinkBase db) {
+    public SnackAdapter( Context context, snackBase sb) {
+        this.sb = sb;
         this.context = context;
-        this.dt = db;
-
-        Log.i("DrinkAdapter","ini nih" + db.get(0).getDrinkPrice());
     }
 
     @NonNull
     @Override
-    public DrinkAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SnackAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater =  LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.drink_row,parent,false);
+        View view = inflater.inflate(R.layout.snack_row,parent,false);
 
-        return new MyViewHolder(view);
+        return new SnackAdapter.MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DrinkAdapter.MyViewHolder holder, int position) {
-        holder.text1.setText(dt.get(position).getDrinkName());
-        holder.text2.setText(dt.get(position).getDrinkPrice().toString());
-        holder.drinkImage.setImageResource(dt.get(position).getDrinkImage());
+    public void onBindViewHolder(@NonNull SnackAdapter.MyViewHolder holder, int position) {
+        holder.text1.setText(sb.get(position).getSnackName());
+        holder.text2.setText(sb.get(position).getSnackPrice().toString());
+        holder.drinkImage.setImageResource(sb.get(position).getSnackImage());
     }
-
 
     @Override
-    public int getItemCount() {
-        return this.dt.size();
-    }
+    public int getItemCount() {return this.sb.size();}
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView text1,text2;
         ImageView drinkImage;
 
-        public MyViewHolder(@NonNull View itemView){
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             drinkImage = itemView.findViewById(R.id.productImage);
@@ -73,7 +66,7 @@ public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder
                     Intent intent =  new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent =  new Intent(context, Drink_AirMineral_Activity.class);
+                            intent =  new Intent(context, Snack_Lays_Activity.class);
                             break;
 
                         case 1 :
@@ -90,13 +83,10 @@ public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder
                     }
 
                     context.startActivity(intent);
-
                 }
             });
 
-
         }
-
     }
 
 }

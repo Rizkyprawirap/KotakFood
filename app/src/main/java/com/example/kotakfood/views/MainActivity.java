@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.kotakfood.R;
+import com.example.kotakfood.model.drinkBase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,5 +30,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        snacksButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Snack_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        foodsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Food_Activity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
