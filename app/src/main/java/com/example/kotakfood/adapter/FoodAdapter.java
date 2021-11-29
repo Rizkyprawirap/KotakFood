@@ -12,8 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kotakfood.R;
-import com.example.kotakfood.model.drinkBase;
-import com.example.kotakfood.model.foodBase;
+import com.example.kotakfood.model.food.foodBase;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.MyViewHolder>{
 

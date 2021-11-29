@@ -8,9 +8,9 @@ import android.os.Bundle;
 
 import com.example.kotakfood.R;
 import com.example.kotakfood.adapter.SnackAdapter;
-import com.example.kotakfood.model.snackBase;
-import com.example.kotakfood.model.snackLogic;
-import com.example.kotakfood.model.snackType;
+import com.example.kotakfood.model.snack.snackBase;
+import com.example.kotakfood.model.snack.snackLogic;
+import com.example.kotakfood.model.snack.snackType;
 
 public class Snack_Activity extends AppCompatActivity {
 

@@ -13,12 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.kotakfood.model.drinkBase;
-import com.example.kotakfood.model.drinkType;
-import com.example.kotakfood.views.Drink_AirMineral_Activity;
+import com.example.kotakfood.model.drink.drinkBase;
 import com.example.kotakfood.R;
-
-import java.util.ArrayList;
 
 public class DrinkAdapter extends RecyclerView.Adapter<DrinkAdapter.MyViewHolder>{
 

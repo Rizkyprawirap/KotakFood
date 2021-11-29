@@ -1,4 +1,6 @@
-package com.example.kotakfood.model;
+package com.example.kotakfood.model.food;
+
+import com.example.kotakfood.model.food.foodBase;
 
 public class foodLogic {
     private static foodBase fb = null;

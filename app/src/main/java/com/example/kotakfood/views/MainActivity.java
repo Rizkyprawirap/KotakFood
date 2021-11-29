@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.kotakfood.R;
-import com.example.kotakfood.model.drinkBase;
 
 public class MainActivity extends AppCompatActivity {
 

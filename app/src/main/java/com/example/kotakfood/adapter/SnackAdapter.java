@@ -13,10 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kotakfood.R;
-import com.example.kotakfood.model.snackBase;
-import com.example.kotakfood.views.Drink_AirMineral_Activity;
-import com.example.kotakfood.views.Snack_Activity;
-import com.example.kotakfood.views.Snack_Lays_Activity;
+import com.example.kotakfood.model.snack.snackBase;
 
 public class SnackAdapter extends RecyclerView.Adapter<SnackAdapter.MyViewHolder>{
 

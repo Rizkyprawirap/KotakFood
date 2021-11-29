@@ -10,19 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotakFood">
         <activity
+            android:name=".views.MyDrinkOrder_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".views.Drink_Detail_Activity"
+            android:exported="false" />
+        <activity
             android:name=".views.Food_Activity"
             android:exported="false" />
         <activity
-            android:name=".views.Snack_Lays_Activity"
-            android:exported="false" />
-        <activity
             android:name=".views.Snack_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".views.Drink_AirMineral_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".views.Drink_Order_Activity"
             android:exported="false" />
         <activity
             android:name=".views.Drinks_Activity"

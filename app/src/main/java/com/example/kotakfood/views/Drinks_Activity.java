@@ -8,11 +8,9 @@ import android.os.Bundle;
 
 import com.example.kotakfood.R;
 import com.example.kotakfood.adapter.DrinkAdapter;
-import com.example.kotakfood.model.drinkBase;
-import com.example.kotakfood.model.drinkLogic;
-import com.example.kotakfood.model.drinkType;
-
-import java.util.ArrayList;
+import com.example.kotakfood.model.drink.drinkBase;
+import com.example.kotakfood.model.drink.drinkLogic;
+import com.example.kotakfood.model.drink.drinkType;
 
 public class Drinks_Activity extends AppCompatActivity {
 

@@ -1,4 +1,6 @@
-package com.example.kotakfood.model;
+package com.example.kotakfood.model.drink;
+
+import com.example.kotakfood.model.drink.drinkBase;
 
 public class drinkLogic {
     private static drinkBase db = null;

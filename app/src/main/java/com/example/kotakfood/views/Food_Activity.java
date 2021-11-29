@@ -8,10 +8,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kotakfood.R;
 import com.example.kotakfood.adapter.FoodAdapter;
-import com.example.kotakfood.model.drinkType;
-import com.example.kotakfood.model.foodBase;
-import com.example.kotakfood.model.foodLogic;
-import com.example.kotakfood.model.foodType;
+import com.example.kotakfood.model.food.foodBase;
+import com.example.kotakfood.model.food.foodLogic;
+import com.example.kotakfood.model.food.foodType;
 
 public class Food_Activity extends AppCompatActivity {
 

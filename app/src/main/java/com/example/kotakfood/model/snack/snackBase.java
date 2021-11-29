@@ -1,4 +1,4 @@
-package com.example.kotakfood.model;
+package com.example.kotakfood.model.snack;
 
 import java.util.ArrayList;
 
